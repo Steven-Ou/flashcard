@@ -41,7 +41,7 @@ export async function POST(req) {
       {role: 'system', content: SystemPrompt},
       {role: 'user', content:data },
     ],
-    
+    model:
   })
   try {
     
