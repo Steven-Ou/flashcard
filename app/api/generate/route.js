@@ -42,8 +42,12 @@ export async function POST(req) {
       {role: 'user', content:data },
     ],
     model: 'gpt-4o',
-    response_format:
+    response_format: {type: 'json_object'},
   })
+
+  const flashcards = JSON.parse(completion.choices[0.message.content])
+  
+  return NextResponse.json(flashcards.flashcards)
   try {
     
     const params = {
