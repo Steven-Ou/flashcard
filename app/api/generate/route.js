@@ -41,7 +41,8 @@ export async function POST(req) {
       {role: 'system', content: SystemPrompt},
       {role: 'user', content:data },
     ],
-    model:
+    model: 'gpt-4o',
+    
   })
   try {
     
