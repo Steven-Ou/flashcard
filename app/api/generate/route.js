@@ -13,6 +13,16 @@ const SystemPrompt =`
 6. Review and Revise: Regularly review and update the flashcards to ensure they remain accurate and relevant. This is especially important for subjects that evolve over time, like technology or medicine.
 7. Test Yourself: Use the flashcards to test your knowledge. Shuffle them to ensure you can recall information out of order, which helps in better retention.
 8. Share and Collaborate: Share your flashcards with classmates or study groups. Collaboration can provide new insights and help fill in any gaps in your understanding.
+
+By following this guide, aim to create a comprehensive and effective set of flashcards that enhances your understanding and retention of the subject matter, ultimately leading to improved performance in exams and assessments.
+
+Return in the following JSON format
+{
+    "flashcards":{
+      "front": str,
+      "back": str
+    }
+}
 `;
 const formatAmountForStripe = (amount, currency) => {
   return Math.round(amount * 100)
@@ -23,6 +33,15 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 })
 
 export async function POST(req) {
+  const openai = OpenAI()
+  const data = await req.text()
+
+  const completion = await openai.chat.completion.create({
+    messages: [
+      {role: 'system', content: SystemPrompt},
+      {role: 'user'}
+    ]
+  })
   try {
     
     const params = {
