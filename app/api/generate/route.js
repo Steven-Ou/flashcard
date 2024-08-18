@@ -42,7 +42,7 @@ export async function POST(req) {
       {role: 'user', content:data },
     ],
     model: 'gpt-4o',
-    
+    response_format:
   })
   try {
     
