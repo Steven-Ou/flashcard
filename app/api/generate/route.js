@@ -2,6 +2,10 @@ import { NextResponse } from 'next/server'
 import OpenAI from 'openai'
 import Stripe from 'stripe'
 
+
+const SystemPrompt =`
+  You are a flashcard creator
+`;
 const formatAmountForStripe = (amount, currency) => {
   return Math.round(amount * 100)
  }
