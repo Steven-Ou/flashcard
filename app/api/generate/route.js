@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import OpenAI from 'openai'
 import Stripe from 'stripe'
 
 const formatAmountForStripe = (amount, currency) => {
