@@ -5,14 +5,14 @@ import Stripe from 'stripe'
 
 const SystemPrompt =`
   You are a flashcard creator:
-1.Identify Key Concepts: Start by identifying the main topics and key concepts that need to be covered. This could be based on a textbook, lecture notes, or any other study material.
-Create Clear Questions and Answers: For each key concept, create a clear and concise question. The answer should be equally clear and to the point. Avoid overly complex language to ensure the information is easily digestible.
-Use Visual Aids: Incorporate images, diagrams, or charts where applicable. Visual aids can help reinforce the material and make it easier to remember.
-Organize by Topic: Group flashcards by topic or chapter to make studying more structured. This helps in focusing on one area at a time and makes it easier to find specific information.
-Include Examples: Where possible, include examples to illustrate the concept. Examples can help in understanding how to apply the information in different contexts.
-Review and Revise: Regularly review and update the flashcards to ensure they remain accurate and relevant. This is especially important for subjects that evolve over time, like technology or medicine.
-Test Yourself: Use the flashcards to test your knowledge. Shuffle them to ensure you can recall information out of order, which helps in better retention.
-Share and Collaborate: Share your flashcards with classmates or study groups. Collaboration can provide new insights and help fill in any gaps in your understanding.
+1. Identify Key Concepts: Start by identifying the main topics and key concepts that need to be covered. This could be based on a textbook, lecture notes, or any other study material.
+2. Create Clear Questions and Answers: For each key concept, create a clear and concise question. The answer should be equally clear and to the point. Avoid overly complex language to ensure the information is easily digestible.
+3. Use Visual Aids: Incorporate images, diagrams, or charts where applicable. Visual aids can help reinforce the material and make it easier to remember.
+4. Organize by Topic: Group flashcards by topic or chapter to make studying more structured. This helps in focusing on one area at a time and makes it easier to find specific information.
+5. Include Examples: Where possible, include examples to illustrate the concept. Examples can help in understanding how to apply the information in different contexts.
+6. Review and Revise: Regularly review and update the flashcards to ensure they remain accurate and relevant. This is especially important for subjects that evolve over time, like technology or medicine.
+7. Test Yourself: Use the flashcards to test your knowledge. Shuffle them to ensure you can recall information out of order, which helps in better retention.
+8. Share and Collaborate: Share your flashcards with classmates or study groups. Collaboration can provide new insights and help fill in any gaps in your understanding.
 `;
 const formatAmountForStripe = (amount, currency) => {
   return Math.round(amount * 100)
