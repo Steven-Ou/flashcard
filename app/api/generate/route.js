@@ -18,10 +18,10 @@ By following this guide, aim to create a comprehensive and effective set of flas
 
 Return in the following JSON format
 {
-    "flashcards":{
+    "flashcards":[
       "front": str,
       "back": str
-    }
+    ]
 }
 `;
 const formatAmountForStripe = (amount, currency) => {
@@ -39,8 +39,9 @@ export async function POST(req) {
   const completion = await openai.chat.completion.create({
     messages: [
       {role: 'system', content: SystemPrompt},
-      {role: 'user'}
-    ]
+      {role: 'user', content:data },
+    ],
+    
   })
   try {
     
