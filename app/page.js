@@ -14,11 +14,11 @@ export default function Home() {
 
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6"> 
+        <Typography variant="h6" style={{flexGrow:1 }}> 
           Flashcard
           <SignedOut>
-            <Button> Login </Button>
-            <Button> Sign Up </Button>
+            <Button color="inherit"> Login </Button>
+            <Button color="inherit"> Sign Up </Button>
           </SignedOut>
           <SignedIn>
             <UserButton />
