@@ -1,7 +1,7 @@
 import Image from "next/image";
 import getStripe from "@/utils/get-stripe";
 import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs'
-import { AppBar, Container, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Container, Toolbar, Typography } from "@mui/material";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,7 +16,10 @@ export default function Home() {
       <Toolbar>
         <Typography variant="h6"> 
           Flashcard
-          <
+          <SignedOut>
+            <Button>Login</Button>
+            
+          </SignedOut>
         </Typography>
       </Toolbar>
     </AppBar>
