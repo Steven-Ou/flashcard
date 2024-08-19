@@ -18,7 +18,8 @@ export async function POST(req){
             },
             unit_amount: formatAmountForStripe(10),
             recurring: {
-                
+                interval: 'month',
+                interval_count:1, 
             },
           },
           
