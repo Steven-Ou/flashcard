@@ -17,8 +17,8 @@ export default function Home() {
         <Typography variant="h6"> 
           Flashcard
           <SignedOut>
-            <Button>Login</Button>
-            
+            <Button> Login </Button>
+            <Button> Sign Up </Button>
           </SignedOut>
         </Typography>
       </Toolbar>
