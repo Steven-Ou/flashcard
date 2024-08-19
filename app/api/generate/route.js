@@ -19,13 +19,15 @@ By following this guide, aim to create a comprehensive and effective set of flas
 Return in the following JSON format
 {
     "flashcards":[
-      "front": str,
-      "back": str
+     {
+       "front": str,
+       "back": str,
+     } 
     ]
 }
 `;
 
-
+//21.17
 export async function POST(req) {
   const openai = OpenAI()
   const data = await req.text()
