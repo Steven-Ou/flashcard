@@ -26,7 +26,7 @@ export default function Home() {
         </Typography>
       </Toolbar>
     </AppBar>
-    <Box>
+    <Box sx={{textAlign:'center', my:4}}>
       <Typography variant= "h2">
         Welcome to Flashcard 
       </Typography>
@@ -34,6 +34,9 @@ export default function Home() {
         {' '}
         The easiest way to make flashcards from your text
       </Typography>
+      <Button variant="contained" color="primary" sx={{mt:2}}>
+
+      </Button>
     </Box>
    </Container>
   )
