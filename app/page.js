@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-   <Container maxWidth="lg">
+   <Container maxWidth="100vh">
     <Head>
       <title> Flashcard </title>
       <meta name="description" content="Create flashcard from your test" />
@@ -14,7 +14,7 @@ export default function Home() {
 
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" style={{flexGrow:1 }}> 
+        <Typography variant="h6" style={{flexGrow:1}}> 
           Flashcard
           <SignedOut>
             <Button color="inherit"> Login </Button>

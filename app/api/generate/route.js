@@ -27,10 +27,24 @@ Return in the following JSON format
 }
 `;
 
-//21.17
+
 export async function POST(req) {
-  const openai = OpenAI()
+  try{
+  const openai = OpenAI({
+    baseURL: "https://openrouter.ai/api/v1",
+    apiKey: process.env.OPENROUTER_API_KEY, // Use process.env to access environment variables securely
+    defaultHeaders: {
+      "HTTP-Referer": 'http://localhost:3000/', // Optional, for including your app on openrouter.ai rankings.
+      "X-Title": 'NameofAI_BOT', // Optional. Shows in rankings on openrouter.ai.
+    }
+  })
   const data = await req.text()
+  console.log("Request data:", data); // Log the request data for debugging
+
+   // Validate that data is an array
+   if (!Array.isArray(data)) {
+    throw new Error("Invalid input: data should be an array of messages.");
+  }
 
   const completion = await openai.chat.completion.create({
     messages: [
@@ -40,8 +54,35 @@ export async function POST(req) {
     model: 'gpt-4o',
     response_format: {type: 'json_object'},
   })
+} catch (error) {
+  console.error("Error in POST /api/chat:", error); // Log the error for debugging
+  return NextResponse.json({ error: error.message }, { status: 400 }); // Return a 400 Bad Request response with the error message
+}
+// Create a ReadableStream to handle the streaming response
+const stream = new ReadableStream({
+  async start(controller) {
+    const encoder = new TextEncoder(); // Create a TextEncoder to convert strings to Uint8Array
+    try {
+      // Iterate over the streamed chunks of the response
+      for await (const chunk of completion) {
+        const content = chunk.choices[0]?.delta?.content; // Extract the content from the chunk
+        if (content) {
+          const text = encoder.encode(content); // Encode the content to Uint8Array
+          controller.enqueue(text); // Enqueue the encoded text to the stream
+        }
+      }
+    } catch (err) {
+      controller.error(err); // Handle any errors that occur during streaming
+    } finally {
+      controller.close(); // Close the stream when done
+    }
+  },
+});
 
   const flashcards = JSON.parse(completion.choices[0].message.content)
   
   return NextResponse.json(flashcards.flashcards)
+
+
+
 }
