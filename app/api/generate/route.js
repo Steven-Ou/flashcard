@@ -48,16 +48,3 @@ export async function POST(req) {
   const flashcards = JSON.parse(completion.choices[0.message.content])
   
   return NextResponse.json(flashcards.flashcards)
-  try {
-    
-   
-    
-   
-
-  } catch (error) {
-    console.error('Error creating checkout session:', error)
-    return new NextResponse(JSON.stringify({ error: { message: error.message } }), {
-      status: 500,
-    })
-  }
-}
