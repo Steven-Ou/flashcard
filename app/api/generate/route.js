@@ -24,13 +24,7 @@ Return in the following JSON format
     ]
 }
 `;
-const formatAmountForStripe = (amount, currency) => {
-  return Math.round(amount * 100)
- }
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2022-11-15',
-})
 
 export async function POST(req) {
   const openai = OpenAI()
@@ -48,3 +42,4 @@ export async function POST(req) {
   const flashcards = JSON.parse(completion.choices[0.message.content])
   
   return NextResponse.json(flashcards.flashcards)
+}
