@@ -26,6 +26,15 @@ export default function Home() {
         </Typography>
       </Toolbar>
     </AppBar>
+    <Box>
+      <Typography variant= "h2">
+        Welcome to Flashcard 
+      </Typography>
+      <Typography variant="h5">
+        {' '}
+        The easiest way to make flashcards from your text
+      </Typography>
+    </Box>
    </Container>
   )
 }
