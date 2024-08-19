@@ -17,7 +17,9 @@ export async function POST(req){
               name: 'Pro Subscription',
             },
             unit_amount: formatAmountForStripe(10),
-           
+            recurring: {
+                
+            },
           },
           
           quantity: 1,
