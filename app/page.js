@@ -97,7 +97,7 @@ export default function Home() {
             Access to basic flashcard Feature and limited storage.
           </Typography>
           <Button variant="contained" color="primary" sx={{mt:2}}>
-
+            Choose basic
           </Button>
         </Box>
         </Grid>
