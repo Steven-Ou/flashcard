@@ -102,25 +102,23 @@ export default function Home() {
         </Box>
         </Grid>
         <Grid item xs={4} md={4}>
-          <Typography variant="h6"> 
-            Smart Flashcards
+        <Box sx={{
+          p:3,
+          border:'1px solid',
+          borderColor:'grey.300', 
+          borderRadius:2, 
+          }}>
+          <Typography variant="h5" gutterBottom> 
+            Basic
           </Typography>
-          <Typography>
+          <Typography variant="h6" gutterBottom>
             {' '}
-            Our AI intelligently breaks down your text into concise
-            flashcard, perfect for studying.
+            Access to basic flashcard Feature and limited storage.
           </Typography>
-        </Grid>
-        <Grid item xs={4} md={4}>
-          <Typography variant="h6"> 
-            Accessible Anywhere
-          </Typography>
-          <Typography>
-            {' '}
-            Access your flashcard from any device, at any time. 
-            Study on the go with ease.
-          </Typography>
-        </Grid>
+          <Button variant="contained" color="primary" sx={{mt:2}}>
+            Choose basic
+          </Button>
+        </Box>
       </Grid>
     </Box>
    </Container>
