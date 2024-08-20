@@ -48,6 +48,10 @@ export default function Home() {
           <Typography variant="h6"> 
             Easy Text Input
           </Typography>
+          <Typography>
+            {' '}
+            Simply input your test and let our software do the rest. Creating flashcards has never been easier.
+          </Typography>
         </Grid>
       </Grid>
     </Box>
