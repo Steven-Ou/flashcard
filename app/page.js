@@ -43,7 +43,7 @@ export default function Home() {
       <Typography variant="h4" >
         Feature
       </Typography>
-      <Grid contained spacing={4}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={4}>
           <Typography variant="h6"> 
             Easy Text Input
@@ -80,9 +80,14 @@ export default function Home() {
     <Typography variant="h4" >
         Pricing
       </Typography>
-      <Grid contained spacing={4}>
+      <Grid container spacing={4}>
         <Grid item xs={12} md={4}>
-         <Box>
+         <Box sx={{
+          p:3,
+          border:'1px solid',
+          borderColor:'grey.300', 
+          borderRadius:2, 
+          }}>
           <Typography variant="h6"> 
             Easy Text Input
           </Typography>
