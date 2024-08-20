@@ -27,12 +27,12 @@ export default function Home() {
         
       </Toolbar>
     </AppBar>
-    
+
     <Box sx={{textAlign:'center', my:4}}>
-      <Typography variant= "h2">
+      <Typography variant= "h2" gutterBottom>
         Welcome to Flashcard 
       </Typography>
-      <Typography variant="h5">
+      <Typography variant="h5" gutterBottom>
         {' '}
         The easiest way to make flashcards from your text
       </Typography>
