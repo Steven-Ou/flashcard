@@ -91,7 +91,7 @@ export default function Home() {
             Creating flashcards has never been easier.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={4} md={4}>
           <Typography variant="h6"> 
             Smart Flashcards
           </Typography>
@@ -101,7 +101,7 @@ export default function Home() {
             flashcard, perfect for studying.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={4} md={4}>
           <Typography variant="h6"> 
             Accessible Anywhere
           </Typography>
@@ -112,7 +112,6 @@ export default function Home() {
           </Typography>
         </Grid>
       </Grid>
-    </Box>
     </Box>
    </Container>
   )
