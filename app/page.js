@@ -94,7 +94,11 @@ export default function Home() {
           </Typography>
           <Typography variant="h6" gutterBottom>
             {' '}
-            Access to basic flashcard Feature and limited storage.
+            $5 / month
+          </Typography>
+          <Typography>
+            {' '}
+            Access 
           </Typography>
           <Button variant="contained" color="primary" sx={{mt:2}}>
             Choose basic
@@ -108,11 +112,11 @@ export default function Home() {
           borderRadius:2, 
           }}>
           <Typography variant="h5" gutterBottom> 
-            Basic
+            Pro
           </Typography>
           <Typography variant="h6" gutterBottom>
             {' '}
-            Access to basic flashcard Feature and limited storage.
+            $10 / month
           </Typography>
           <Button variant="contained" color="primary" sx={{mt:2}}>
             Choose basic
