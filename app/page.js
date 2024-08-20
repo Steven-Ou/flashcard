@@ -88,13 +88,12 @@ export default function Home() {
           borderColor:'grey.300', 
           borderRadius:2, 
           }}>
-          <Typography variant="h6"> 
-            Easy Text Input
+          <Typography variant="h5" gutterBottom> 
+            Basic
           </Typography>
-          <Typography>
+          <Typography variant="h6" gutterBottom>
             {' '}
-            Simply input your test and let our software do the rest. 
-            Creating flashcards has never been easier.
+            Access to basic flashcard Feature and limited storage.
           </Typography>
         </Box>
         </Grid>
