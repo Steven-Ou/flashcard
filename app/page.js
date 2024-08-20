@@ -27,6 +27,7 @@ export default function Home() {
         
       </Toolbar>
     </AppBar>
+    
     <Box sx={{textAlign:'center', my:4}}>
       <Typography variant= "h2">
         Welcome to Flashcard 
