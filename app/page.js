@@ -93,7 +93,6 @@ export default function Home() {
             Basic
           </Typography>
           <Typography variant="h6" gutterBottom>
-            {' '}
             $5 / month
           </Typography>
           <Typography>
@@ -105,6 +104,7 @@ export default function Home() {
           </Button>
          </Box>
         </Grid>
+        <Grid item xs={12} md={4}>
         <Box sx={{
           p:3,
           border:'1px solid',
@@ -115,13 +115,17 @@ export default function Home() {
             Pro
           </Typography>
           <Typography variant="h6" gutterBottom>
-            {' '}
             $10 / month
           </Typography>
+          <Typography>
+            {' '}
+            Unlimited flashcard and storage, with priority support
+          </Typography>
           <Button variant="contained" color="primary" sx={{mt:2}}>
-            Choose basic
+            Choose Pro
           </Button>
         </Box>
+        </Grid>
       </Grid>
     </Box>
    </Container>
