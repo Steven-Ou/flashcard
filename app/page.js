@@ -41,12 +41,12 @@ export default function Home() {
       </Button>
     </Box>
     <Box sx={{my:6}}>
-      <Typography variant="h4" >
+      <Typography variant="h4" gutterBottom >
         Feature
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={12} md={4}>
-          <Typography variant="h6"> 
+          <Typography variant="h6" gutterBottom> 
             Easy Text Input
           </Typography>
           <Typography>
@@ -56,7 +56,7 @@ export default function Home() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Typography variant="h6"> 
+          <Typography variant="h6" gutterBottom> 
             Smart Flashcards
           </Typography>
           <Typography>
@@ -66,7 +66,7 @@ export default function Home() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Typography variant="h6"> 
+          <Typography variant="h6" gutterBottom> 
             Accessible Anywhere
           </Typography>
           <Typography>
@@ -96,6 +96,9 @@ export default function Home() {
             {' '}
             Access to basic flashcard Feature and limited storage.
           </Typography>
+          <Button>
+            
+          </Button>
         </Box>
         </Grid>
         <Grid item xs={4} md={4}>
