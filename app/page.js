@@ -98,7 +98,7 @@ export default function Home() {
           </Typography>
           <Typography>
             {' '}
-            Access 
+            Access to basic flashcard features and limited storage. 
           </Typography>
           <Button variant="contained" color="primary" sx={{mt:2}}>
             Choose basic
