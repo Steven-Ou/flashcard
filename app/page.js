@@ -80,6 +80,39 @@ export default function Home() {
     <Typography variant="h4" >
         Pricing
       </Typography>
+      <Grid contained spacing={4}>
+        <Grid item xs={12} md={4}>
+          <Typography variant="h6"> 
+            Easy Text Input
+          </Typography>
+          <Typography>
+            {' '}
+            Simply input your test and let our software do the rest. 
+            Creating flashcards has never been easier.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Typography variant="h6"> 
+            Smart Flashcards
+          </Typography>
+          <Typography>
+            {' '}
+            Our AI intelligently breaks down your text into concise
+            flashcard, perfect for studying.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Typography variant="h6"> 
+            Accessible Anywhere
+          </Typography>
+          <Typography>
+            {' '}
+            Access your flashcard from any device, at any time. 
+            Study on the go with ease.
+          </Typography>
+        </Grid>
+      </Grid>
+    </Box>
     </Box>
    </Container>
   )
