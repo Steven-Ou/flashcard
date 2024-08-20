@@ -54,6 +54,16 @@ export default function Home() {
             Creating flashcards has never been easier.
           </Typography>
         </Grid>
+        <Grid item xs={12} md={4}>
+          <Typography variant="h6"> 
+            Easy Text Input
+          </Typography>
+          <Typography>
+            {' '}
+            Simply input your test and let our software do the rest. 
+            Creating flashcards has never been easier.
+          </Typography>
+        </Grid>
       </Grid>
     </Box>
    </Container>
