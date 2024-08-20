@@ -99,9 +99,8 @@ export default function Home() {
           <Button variant="contained" color="primary" sx={{mt:2}}>
             Choose basic
           </Button>
-        </Box>
+         </Box>
         </Grid>
-        <Grid item xs={4} md={4}>
         <Box sx={{
           p:3,
           border:'1px solid',
