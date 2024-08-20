@@ -82,6 +82,7 @@ export default function Home() {
       </Typography>
       <Grid contained spacing={4}>
         <Grid item xs={12} md={4}>
+         <Box>
           <Typography variant="h6"> 
             Easy Text Input
           </Typography>
@@ -90,6 +91,7 @@ export default function Home() {
             Simply input your test and let our software do the rest. 
             Creating flashcards has never been easier.
           </Typography>
+        </Box>
         </Grid>
         <Grid item xs={4} md={4}>
           <Typography variant="h6"> 
