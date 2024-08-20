@@ -1,7 +1,7 @@
 import Image from "next/image";
 import getStripe from "@/utils/get-stripe";
 import {SignedIn, SignedOut, UserButton} from '@clerk/nextjs'
-import { AppBar, Box, Button, Container, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Container, Grid, Toolbar, Typography } from "@mui/material";
 import Head from "next/head";
 
 export default function Home() {
@@ -38,6 +38,18 @@ export default function Home() {
       <Button variant="contained" color="primary" sx={{mt:2}}>
         Get Started
       </Button>
+    </Box>
+    <Box sx={{my:6}}>
+      <Typography variant="h4" component={"h2"}>
+        Feature
+      </Typography>
+      <Grid contained spacing={4}>
+        <Grid item xs={12} md={4}>
+          <Typography variant="h6"> 
+            Easy Text Input
+          </Typography>
+        </Grid>
+      </Grid>
     </Box>
    </Container>
   )
