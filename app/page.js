@@ -77,7 +77,9 @@ export default function Home() {
       </Grid>
     </Box>
     <Box sx={{my:6, textAlign:'center'}}>
-
+    <Typography variant="h4" >
+        Pricing
+      </Typography>
     </Box>
    </Container>
   )
