@@ -50,7 +50,8 @@ export default function Home() {
           </Typography>
           <Typography>
             {' '}
-            Simply input your test and let our software do the rest. Creating flashcards has never been easier.
+            Simply input your test and let our software do the rest. 
+            Creating flashcards has never been easier.
           </Typography>
         </Grid>
       </Grid>
