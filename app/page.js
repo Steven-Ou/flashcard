@@ -23,5 +23,8 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
+  const generateContent = async (type) =>{
+    
+  }
   return <main></main>;
 }
