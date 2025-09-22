@@ -26,6 +26,15 @@ export default function Home() {
   const generateContent = async (type) =>{
     setLoading(true);
     setResult(null);
+    try{
+      const response = await fetch('/api/generate'.{
+        method:'post',
+        headers:{
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify({notes,type}),
+      })
+    }
   }
   return <main></main>;
 }
