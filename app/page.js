@@ -19,7 +19,11 @@ import Head from "next/head";
 import { useState } from "react";
 
 export default function Home() {
+  const [notes,setNotes] = useState("");
+  
   return (
-    
+    <main>
+
+    </main>
   );
 }
