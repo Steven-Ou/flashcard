@@ -21,6 +21,7 @@ import { useState } from "react";
 export default function Home() {
   const [notes, setNotes] = useState("");
   const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState(null);
 
   return <main></main>;
 }
