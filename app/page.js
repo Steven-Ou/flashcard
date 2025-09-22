@@ -27,14 +27,17 @@ export default function Home() {
     setLoading(true);
     setResult(null);
     try{
-      const response = await fetch('/api/generate'.{
+      const response = await fetch('/api/generate',{
         method:'post',
         headers:{
           'Content-Type':'application/json',
         },
         body: JSON.stringify({notes,type}),
-      })
+      });
+    }catch(error){}
+
     }
-  }
+    
+  
   return <main></main>;
 }
