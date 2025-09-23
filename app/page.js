@@ -23,23 +23,22 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
-  const generateContent = async (type) =>{
+  const generateContent = async (type) => {
     setLoading(true);
     setResult(null);
-    try{
-      const response = await fetch('/api/generate',{
-        method:'post',
-        headers:{
-          'Content-Type':'application/json',
+    try {
+      const response = await fetch("/api/generate", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({notes,type}),
+        body: JSON.stringify({ notes, type }),
       });
-    }catch(error){
+    } catch (error) {
       console.error("Failed to generate content:", error);
-    }setLoading(false);
-
     }
-    
-  
+    setLoading(false);
+  };
+
   return <main></main>;
 }
