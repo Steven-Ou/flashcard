@@ -40,5 +40,8 @@ export default function Home() {
     setLoading(false);
   };
 
+  const renderResult = () => {
+    if (!result) return null;
+  };
   return <main></main>;
 }
