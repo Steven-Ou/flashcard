@@ -34,7 +34,9 @@ export default function Home() {
         },
         body: JSON.stringify({notes,type}),
       });
-    }catch(error){}
+    }catch(error){
+      console.error("Failed to generate content:", error);
+    }setLoading(false);
 
     }
     
