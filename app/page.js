@@ -42,6 +42,15 @@ export default function Home() {
 
   const renderResult = () => {
     if (!result) return null;
+
+    switch (result.type){
+      case 'flashcards':
+        return(
+          <Grid container spacing ={2}>
+            
+          </Grid>
+        )
+    }
   };
   return <main></main>;
 }
