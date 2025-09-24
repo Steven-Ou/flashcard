@@ -47,7 +47,11 @@ export default function Home() {
       case 'flashcards':
         return(
           <Grid container spacing ={2}>
-            
+            {result.data.flashcards.map((flashcard,index)=>(
+              <Grid>
+                
+              </Grid>
+            ))}
           </Grid>
         )
     }
