@@ -51,7 +51,11 @@ export default function Home() {
               <Grid>
                 <Card>
                   <CardContent>
-                    
+                    <Typography></Typography>
+                    <Typography></Typography>
+                    <hr/>
+                    <Typography></Typography>
+                    <Typography></Typography>
                   </CardContent>
                 </Card>
               </Grid>
