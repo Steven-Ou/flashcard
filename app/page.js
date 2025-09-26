@@ -50,7 +50,9 @@ export default function Home() {
             {result.data.flashcards.map((flashcard,index)=>(
               <Grid>
                 <Card>
-                  
+                  <CardContent>
+                    
+                  </CardContent>
                 </Card>
               </Grid>
             ))}
