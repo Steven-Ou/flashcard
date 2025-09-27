@@ -43,17 +43,17 @@ export default function Home() {
   const renderResult = () => {
     if (!result) return null;
 
-    switch (result.type){
-      case 'flashcards':
-        return(
-          <Grid container spacing ={2}>
-            {result.data.flashcards.map((flashcard,index)=>(
+    switch (result.type) {
+      case "flashcards":
+        return (
+          <Grid container spacing={2}>
+            {result.data.flashcards.map((flashcard, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card>
                   <CardContent>
+                    <Typography variant="h6">Front:</Typography>
                     <Typography></Typography>
-                    <Typography></Typography>
-                    <hr/>
+                    <hr />
                     <Typography></Typography>
                     <Typography></Typography>
                   </CardContent>
@@ -61,7 +61,7 @@ export default function Home() {
               </Grid>
             ))}
           </Grid>
-        )
+        );
     }
   };
   return <main></main>;
