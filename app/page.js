@@ -48,7 +48,7 @@ export default function Home() {
         return(
           <Grid container spacing ={2}>
             {result.data.flashcards.map((flashcard,index)=>(
-              <Grid>
+              <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card>
                   <CardContent>
                     <Typography></Typography>
