@@ -54,7 +54,7 @@ export default function Home() {
                     <Typography variant="h6">Front:</Typography>
                     <Typography>{flashcard.front}</Typography>
                     <hr />
-                    <Typography></Typography>
+                    <Typography variant="h6">Back:</Typography>
                     <Typography></Typography>
                   </CardContent>
                 </Card>
