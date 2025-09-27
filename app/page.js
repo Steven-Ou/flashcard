@@ -52,7 +52,7 @@ export default function Home() {
                 <Card>
                   <CardContent>
                     <Typography variant="h6">Front:</Typography>
-                    <Typography></Typography>
+                    <Typography>{flashcard.front}</Typography>
                     <hr />
                     <Typography></Typography>
                     <Typography></Typography>
