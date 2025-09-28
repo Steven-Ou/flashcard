@@ -63,7 +63,32 @@ export default function Home() {
           </Grid>
         );
       case "test":
-        
+        return (
+          <Box>
+            {result.data.questions.map((question, index) => (
+              <Card sx={{ mb: 2 }} key={index}>
+                <CardContent>
+                  <Typography variant="h6">{`Question ${index + 1}: ${
+                    question.question
+                  }`}</Typography>
+                  {question.options && (
+                    <ul>
+                      {question.options.map((option, i) => (
+                        <li key={i}>{option}</li>
+                      ))}
+                    </ul>
+                  )}
+                  <Typography>
+                    <strong>Answer:</strong> {question.answer}
+                  </Typography>
+                  <Typography>
+                    <strong>Hint:</strong> {question.hint}
+                  </Typography>
+                </CardContent>
+              </Card>
+            ))}
+          </Box>
+        );
     }
   };
   return <main></main>;
