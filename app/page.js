@@ -102,5 +102,9 @@ export default function Home() {
         return null;
     }
   };
-  return <main></main>;
+  return(
+    <Container>
+      
+    </Container>
+  );
 }
