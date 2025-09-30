@@ -89,6 +89,17 @@ export default function Home() {
             ))}
           </Box>
         );
+      case "guide":
+        return (
+          <Card>
+            <CardContent>
+              <Typography variant="h5">Study Guide</Typography>
+              <Typography>{result.data.guide}</Typography>
+            </CardContent>
+          </Card>
+        );
+      default:
+        return null;
     }
   };
   return <main></main>;
