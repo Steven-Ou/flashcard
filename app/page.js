@@ -104,7 +104,10 @@ export default function Home() {
   };
   return(
     <Container>
-      
+      <Head>
+        <title></title>
+        <meta/>
+      </Head>
     </Container>
   );
 }
