@@ -151,6 +151,15 @@ export default function Home() {
           <CircularProgress/>
         </Box>
       )}
+
+      {result &&(
+        <Box>
+          <Typography>
+            Generated Content
+          </Typography>
+          
+        </Box>
+      )}
     </Container>
   );
 }
