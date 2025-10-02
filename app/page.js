@@ -145,6 +145,12 @@ export default function Home() {
           <Button>Generate Study Guide</Button>
         </Box>
       </Box>
+
+      {loading && (
+        <Box>
+          <CircularProgress/>
+        </Box>
+      )}
     </Container>
   );
 }
