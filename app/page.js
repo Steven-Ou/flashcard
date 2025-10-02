@@ -111,8 +111,12 @@ export default function Home() {
       <AppBar>
         <Toolbar>
           <Typography>
-            
+              Flashcard
           </Typography>
+          <SignedOut>
+            <Button>Login</Button>
+            <Button>Sign Up</Button>
+          </SignedOut>
         </Toolbar>
       </AppBar>
     </Container>
