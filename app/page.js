@@ -133,6 +133,12 @@ export default function Home() {
           Get Started!
         </Button>
       </Box>
+
+      <Box>
+        <Typography>
+          Your Notes
+        </Typography>
+      </Box>
     </Container>
   );
 }
