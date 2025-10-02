@@ -117,6 +117,9 @@ export default function Home() {
             <Button>Login</Button>
             <Button>Sign Up</Button>
           </SignedOut>
+          <SignedIn>
+            <UserButton/>
+          </SignedIn>
         </Toolbar>
       </AppBar>
     </Container>
