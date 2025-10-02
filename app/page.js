@@ -102,23 +102,21 @@ export default function Home() {
         return null;
     }
   };
-  return(
+  return (
     <Container>
       <Head>
         <title></title>
-        <meta/>
+        <meta />
       </Head>
       <AppBar>
         <Toolbar>
-          <Typography>
-              Flashcard
-          </Typography>
+          <Typography>Flashcard</Typography>
           <SignedOut>
             <Button>Login</Button>
             <Button>Sign Up</Button>
           </SignedOut>
           <SignedIn>
-            <UserButton/>
+            <UserButton />
           </SignedIn>
         </Toolbar>
       </AppBar>
