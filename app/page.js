@@ -157,7 +157,7 @@ export default function Home() {
           <Typography>
             Generated Content
           </Typography>
-          
+          {renderResult()}
         </Box>
       )}
     </Container>
