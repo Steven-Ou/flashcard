@@ -108,6 +108,13 @@ export default function Home() {
         <title></title>
         <meta/>
       </Head>
+      <AppBar>
+        <Toolbar>
+          <Typography>
+            
+          </Typography>
+        </Toolbar>
+      </AppBar>
     </Container>
   );
 }
