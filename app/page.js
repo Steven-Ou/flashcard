@@ -102,24 +102,37 @@ export default function Home() {
         return null;
     }
   };
-  return (
+  return(
     <Container>
       <Head>
         <title></title>
-        <meta />
+        <meta/>
       </Head>
       <AppBar>
         <Toolbar>
-          <Typography>Flashcard</Typography>
+          <Typography>
+              Flashcard
+          </Typography>
           <SignedOut>
             <Button>Login</Button>
             <Button>Sign Up</Button>
           </SignedOut>
           <SignedIn>
-            <UserButton />
+            <UserButton/>
           </SignedIn>
         </Toolbar>
       </AppBar>
+      <Box>
+        <Typography>
+          Welcome to Flashcard
+        </Typography>
+        <Typography>
+          The easiest way to make flashcards for your test
+        </Typography>
+        <Button>
+          Get Started!
+        </Button>
+      </Box>
     </Container>
   );
 }
