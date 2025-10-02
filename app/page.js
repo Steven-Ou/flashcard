@@ -138,6 +138,12 @@ export default function Home() {
         <Typography>
           Your Notes
         </Typography>
+        <TextField/>
+        <Box>
+          <Button>Generating Flashcards</Button>
+          <Button>Generate Test</Button>
+          <Button>Generate Study Guide</Button>
+        </Box>
       </Box>
     </Container>
   );
