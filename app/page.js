@@ -126,10 +126,10 @@ export default function Home() {
         <Typography variant="h2" gutterBottom>
           Welcome to Flashcard
         </Typography>
-        <Typography>
+        <Typography variant="h5" gutterBottom>
           The easiest way to make flashcards for your test
         </Typography>
-        <Button>
+        <Button variant="contained" color="primary" sx={{ mt: 2 }}>
           Get Started!
         </Button>
       </Box>
