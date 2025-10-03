@@ -122,8 +122,8 @@ export default function Home() {
           </SignedIn>
         </Toolbar>
       </AppBar>
-      <Box>
-        <Typography>
+      <Box sx={{ textAlign: 'center', my: 4 }}>
+        <Typography variant="h2" gutterBottom>
           Welcome to Flashcard
         </Typography>
         <Typography>
