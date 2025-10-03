@@ -145,7 +145,7 @@ export default function Home() {
           variant="outlined"
           value={notes}
           onChange={(e) => setNotes(e.target.value)}/>
-        <Box>
+        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
           <Button>Generating Flashcards</Button>
           <Button>Generate Test</Button>
           <Button>Generate Study Guide</Button>
