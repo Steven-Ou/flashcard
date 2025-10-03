@@ -138,7 +138,13 @@ export default function Home() {
         <Typography variant="h4" gutterBottom>
           Your Notes
         </Typography>
-        <TextField/>
+        <TextField label="Paste your notes here..."
+          multiline
+          rows={10}
+          fullWidth
+          variant="outlined"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}/>
         <Box>
           <Button>Generating Flashcards</Button>
           <Button>Generate Test</Button>
