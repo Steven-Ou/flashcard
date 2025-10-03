@@ -102,7 +102,7 @@ export default function Home() {
         return null;
     }
   };
-  return(
+  return (
     <Container maxWidth="100vh">
       <Head>
         <title>Flashcard</title>
@@ -111,18 +111,18 @@ export default function Home() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              Flashcard
+            Flashcard
           </Typography>
           <SignedOut>
             <Button color="inherit">Login</Button>
             <Button color="inherit">Sign Up</Button>
           </SignedOut>
           <SignedIn>
-            <UserButton/>
+            <UserButton />
           </SignedIn>
         </Toolbar>
       </AppBar>
-      <Box sx={{ textAlign: 'center', my: 4 }}>
+      <Box sx={{ textAlign: "center", my: 4 }}>
         <Typography variant="h2" gutterBottom>
           Welcome to Flashcard
         </Typography>
@@ -138,27 +138,38 @@ export default function Home() {
         <Typography variant="h4" gutterBottom>
           Your Notes
         </Typography>
-        <TextField label="Paste your notes here..."
+        <TextField
+          label="Paste your notes here..."
           multiline
           rows={10}
           fullWidth
           variant="outlined"
           value={notes}
-          onChange={(e) => setNotes(e.target.value)}/>
-        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
-          <Button variant="contained" onClick={() => generateContent('flashcards')}>Generate Flashcards</Button>
-          <Button variant="contained" onClick={() => generateContent('test')}>Generate Test</Button>
-          <Button variant="contained" onClick={() => generateContent('guide')}>Generate Study Guide</Button>
+          onChange={(e) => setNotes(e.target.value)}
+        />
+        <Box sx={{ display: "flex", justifyContent: "center", gap: 2, mt: 2 }}>
+          <Button
+            variant="contained"
+            onClick={() => generateContent("flashcards")}
+          >
+            Generate Flashcards
+          </Button>
+          <Button variant="contained" onClick={() => generateContent("test")}>
+            Generate Test
+          </Button>
+          <Button variant="contained" onClick={() => generateContent("guide")}>
+            Generate Study Guide
+          </Button>
         </Box>
       </Box>
 
       {loading && (
-        <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
-          <CircularProgress/>
+        <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
+          <CircularProgress />
         </Box>
       )}
 
-      {result &&(
+      {result && (
         <Box sx={{ my: 4 }}>
           <Typography variant="h4" gutterBottom>
             Generated Content
