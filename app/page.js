@@ -114,8 +114,8 @@ export default function Home() {
               Flashcard
           </Typography>
           <SignedOut>
-            <Button>Login</Button>
-            <Button>Sign Up</Button>
+            <Button color="inherit">Login</Button>
+            <Button color="inherit">Sign Up</Button>
           </SignedOut>
           <SignedIn>
             <UserButton/>
