@@ -108,9 +108,9 @@ export default function Home() {
         <title>Flashcard</title>
         <meta name="description" content="Create flashcard from your test" />
       </Head>
-      <AppBar>
+      <AppBar position="static">
         <Toolbar>
-          <Typography>
+          <Typography variant="h6" sx={{ flexGrow: 1 }}>
               Flashcard
           </Typography>
           <SignedOut>
