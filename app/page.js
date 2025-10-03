@@ -148,7 +148,7 @@ export default function Home() {
         <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 2 }}>
           <Button variant="contained" onClick={() => generateContent('flashcards')}>Generate Flashcards</Button>
           <Button variant="contained" onClick={() => generateContent('test')}>Generate Test</Button>
-          <Button>Generate Study Guide</Button>
+          <Button variant="contained" onClick={() => generateContent('guide')}>Generate Study Guide</Button>
         </Box>
       </Box>
 
