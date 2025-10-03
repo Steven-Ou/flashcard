@@ -103,7 +103,7 @@ export default function Home() {
     }
   };
   return(
-    <Container>
+    <Container maxWidth="100vh">
       <Head>
         <title></title>
         <meta/>
