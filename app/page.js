@@ -105,8 +105,8 @@ export default function Home() {
   return(
     <Container maxWidth="100vh">
       <Head>
-        <title></title>
-        <meta/>
+        <title>Flashcard</title>
+        <meta name="description" content="Create flashcard from your test" />
       </Head>
       <AppBar>
         <Toolbar>
