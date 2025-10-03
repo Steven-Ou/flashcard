@@ -153,7 +153,7 @@ export default function Home() {
       </Box>
 
       {loading && (
-        <Box>
+        <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
           <CircularProgress/>
         </Box>
       )}
