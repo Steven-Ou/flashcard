@@ -6,5 +6,7 @@ const client = new AssemblyAI({
 });
 
 export async function POST(req){
-    
+    try{
+        const formData = await req.formData();
+    }
 }
