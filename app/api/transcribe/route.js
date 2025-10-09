@@ -13,5 +13,7 @@ export async function POST(req){
         if(!file){
             return NextResponse.json({error: 'No file uploaded'},{status:400});
         }
+
+        const audioBuffer = Buffer.from(await file.arrayBuffer());
     }
 }
