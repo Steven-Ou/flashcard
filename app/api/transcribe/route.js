@@ -15,5 +15,9 @@ export async function POST(req){
         }
 
         const audioBuffer = Buffer.from(await file.arrayBuffer());
+
+        const transcript = await client.transcripts.create({
+
+        });
     }
 }
