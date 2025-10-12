@@ -1,27 +1,31 @@
 import { NextResponse } from "next/server";
-import {AssemblyAI} from 'assemblyai';
+import { AssemblyAI } from "assemblyai";
 
 const client = new AssemblyAI({
   apiKey: process.env.ASSEMBLYAI_API_KEY,
 });
 
-export async function POST(req){
-    try{
-        const formData = await req.formData();
-        const file = formData.get('file');
+export async function POST(req) {
+  try {
+    const formData = await req.formData();
+    const file = formData.get("file");
 
-        if(!file){
-            return NextResponse.json({error: 'No file uploaded'},{status:400});
-        }
-
-        const audioBuffer = Buffer.from(await file.arrayBuffer());
-
-        const transcript = await client.transcripts.create({
-            audio:audioBuffer,
-        });
-
-        return NextResponse.json(transcript);
-    }catch(error){
-        console.error('Error transcribing audio:',error);
+    if (!file) {
+      return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
     }
+
+    const audioBuffer = Buffer.from(await file.arrayBuffer());
+
+    const transcript = await client.transcripts.create({
+      audio: audioBuffer,
+    });
+
+    return NextResponse.json(transcript);
+  } catch (error) {
+    console.error("Error transcribing audio:", error);
+    return NextResponse.json(
+      { error: "Failed to transcribe audio" },
+      { status: 500 }
+    );
+  }
 }
