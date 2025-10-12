@@ -22,6 +22,6 @@ export async function POST(req){
 
         return NextResponse.json(transcript);
     }catch(error){
-        
+        console.error('Error transcribing audio:',error);
     }
 }
