@@ -21,7 +21,6 @@
     "openai": "^4.56.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-mic": "^12.4.6",
     "stripe": "^16.8.0"
   },
   "devDependencies": {
