@@ -12,9 +12,9 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-
 import Head from "next/head";
 import { useState } from "react";
+import { useReactMediaRecorder } from "react-media-recorder";
 
 export default function Home() {
   const [notes, setNotes] = useState("");
