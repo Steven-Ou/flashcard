@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { CircularProgress, Box } from "@mui/material";
 
-const HomeComponent = dynamic(() => import(".app/Home"), {
+const HomeComponent = dynamic(() => import("./home"), {
   ssr: false,
   loading: () => (
     <Box
